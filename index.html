@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Icon Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Make your own<div class="large">icon!</div></h1>
+    <div class="white">
+        <div class="controls">
+            <div class="control-group">
+                <label for="gridSizeInput">Set Grid:</label>
+                <input type="number" min="3" max="400" value="200" id="gridSizeInput">
+                <button onclick="setGridSize()">Set Grid Size</button>
+            </div>
+            <div class="control-group">
+                <label for="colorPicker">Color:</label>
+                <input type="color" id="colorPicker" value="#000000">
+                <button id="drawMode" class="active" onclick="toggleDrawMode()">Draw</button>
+                <button id="eraseMode" onclick="toggleEraseMode()">Erase</button>
+                <button class="download-button" onclick="downloadCanvas()">Download</button>
+            </div>
+            <canvas id="iconCanvas" width="500" height="500"></canvas>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
